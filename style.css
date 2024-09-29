@@ -14,7 +14,7 @@ nav {
 }
 
 .nav-bar > li {
-    position: relative;
+    position: relative; /* Enable positioning for dropdown */
 }
 
 .nav-bar a {
@@ -30,8 +30,8 @@ nav {
 
 .dropdown {
     display: none; /* Hide dropdown by default */
-    position: absolute;
-    top: 100%;
+    position: absolute; /* Position it relative to the parent */
+    top: 100%; /* Align below the parent item */
     left: 0;
     background-color: #444;
     min-width: 150px;
@@ -43,5 +43,5 @@ nav {
 }
 
 .nav-bar li:hover .dropdown {
-    display: block; /* Show dropdown on hover */
+    display: block; /* Show dropdown on hover of the li */
 }
