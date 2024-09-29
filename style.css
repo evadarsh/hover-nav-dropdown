@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #333;
+}
+
+.nav-bar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-bar > li {
+    position: relative;
+}
+
+.nav-bar a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    background-color: #575757;
+}
+
+.dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 150px;
+    z-index: 1;
+}
+
+.dropdown li {
+    display: block; /* Display dropdown items as block */
+}
+
+.nav-bar li:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
